@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keluarga Bahagia Kami</title>
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+  body {background: #fff8f0; color: #333; line-height: 1.6;}
+  
+  header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white; text-align: center; padding: 60px 20px;
+  }
+  header h1 {font-size: 2.5rem; margin-bottom: 10px;}
+  header p {font-size: 1.1rem;}
+
+  nav {
+    background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; top: 0; z-index: 10;
+  }
+  nav ul {display: flex; justify-content: center; list-style: none; flex-wrap: wrap;}
+  nav ul li a {
+    display: block; padding: 15px 20px; text-decoration: none; 
+    color: #ff6b81; font-weight: 600; transition: 0.3s;
+  }
+  nav ul li a:hover {background: #ff6b81; color: white; border-radius: 8px;}
+
+  .container {max-width: 1100px; margin: auto; padding: 40px 20px;}
+  
+  .section-title {text-align: center; font-size: 2rem; margin-bottom: 30px; color: #ff6b81;}
+
+  /* Anggota Keluarga */
+  .family-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+  .card {
+    background: white; border-radius: 15px; padding: 20px; text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s;
+  }
+  .card:hover {transform: translateY(-5px);}
+  .card img {
+    width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+    border: 4px solid #fad0c4; margin-bottom: 15px;
+  }
+  .card h3 {color: #ff6b81; margin-bottom: 5px;}
+
+  /* Galeri */
+  .gallery {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .gallery img {
+    width: 100%; height: 200px; object-fit: cover; border-radius: 12px;
+    transition: 0.3s;
+  }
+  .gallery img:hover {transform: scale(1.05);}
+
+  /* Buku Tamu */
+  form {background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);}
+  form input, form textarea {
+    width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #fad0c4;
+    border-radius: 8px; outline: none;
+  }
+  form button {
+    background: #ff6b81; color: white; border: none; padding: 12px 25px;
+    border-radius: 8px; cursor: pointer; font-weight: 600;
+  }
+  form button:hover {background: #ff4757;}
+
+  footer {
+    background: #333; color: white; text-align: center; padding: 20px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>👨‍👩‍👧‍👦 Keluarga [Nama Keluarga Kamu]</h1>
+  <p>"Rumah bukan tentang tempatnya, tapi tentang orang-orangnya"</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#anggota">Anggota</a></li>
+    <li><a href="#galeri">Galeri</a></li>
+    <li><a href="#buku-tamu">Buku Tamu</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  
+  <section id="tentang">
+    <h2 class="section-title">Tentang Kami</h2>
+    <div class="card">
+      <p>Halo! Selamat datang di website keluarga kami 💕<br>
+      Website ini kami buat untuk menyimpan kenangan, cerita, dan kebersamaan kami. 
+      Semoga bisa jadi tempat kita bernostalgia bareng-bareng.</p>
+    </div>
+  </section>
+
+  <section id="anggota">
+    <h2 class="section-title">Anggota Keluarga</h2>
+    <div class="family-grid">
+      <div class="card">
+        <img src="https://i.pravatar.cc/150?img=11" alt="Ayah">
+        <h3>Ayah</h3>
+        <p><b>Nama:</b> [Isi Nama Ayah]<br>
+        <b>Hobi:</b> Ngopi & Baca Koran<br>
+        <b>Motto:</b> "Kerja keras untuk keluarga"</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pravatar.cc/150?img=5" alt="Ibu">
+        <h3>Ibu</h3>
+        <p><b>Nama:</b> [Isi Nama Ibu]<br>
+        <b>Hobi:</b> Masak & Berkebun<br>
+        <b>Motto:</b> "Dapur adalah surgaku"</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pravatar.cc/150?img=8" alt="Anak 1">
+        <h3>Kak</h3>
+        <p><b>Nama:</b> [Isi Nama Kakak]<br>
+        <b>Hobi:</b> Main Game & Nonton<br>
+        <b>Motto:</b> "Kejar mimpi setinggi langit"</p>
+      </div>
+      <div class="card">
+        <img src="https://i.pravatar.cc/150?img=32" alt="Anak 2">
+        <h3>Adik</h3>
+        <p><b>Nama:</b> [Isi Nama Adik]<br>
+        <b>Hobi:</b> Gambar & TikTok<br>
+        <b>Motto:</b> "Tetap ceria setiap hari"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2 class="section-title">Galeri Kenangan</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/400/300?random=1" alt="Foto 1">
+      <img src="https://picsum.photos/400/300?random=2" alt="Foto 2">
+      <img src="https://picsum.photos/400/300?random=3" alt="Foto 3">
+      <img src="https://picsum.photos/400/300?random=4" alt="Foto 4">
+      <img src="https://picsum.photos/400/300?random=5" alt="Foto 5">
+      <img src="https://picsum.photos/400/300?random=6" alt="Foto 6">
+    </div>
+  </section>
+
+  <section id="buku-tamu">
+    <h2 class="section-title">Buku Tamu Keluarga</h2>
+    <form onsubmit="alert('Makasih udah ninggalin pesan! ❤️'); this.reset(); return false;">
+      <input type="text" placeholder="Nama Kamu" required>
+      <textarea rows="4" placeholder="Tinggalkan pesan untuk keluarga kami..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Website Keluarga [Nama Keluarga]. Dibuat dengan ❤️</p>
+</footer>
+
+</body>
+</html>
